@@ -1,0 +1,82 @@
+/* Fonte personalizada Montserrat */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Cabeçalho no topo */
+header {
+    background-color: #282c34;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #61dafb;
+    font-weight: 700;
+    font-size: 1.8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    z-index: 10;
+}
+
+/* Espaço para o cabeçalho fixo */
+body > main, body > aside {
+    padding-top: 70px;
+}
+
+/* Barra lateral */
+aside {
+    background-color: #20232a;
+    padding: 2rem 1rem;
+    width: 220px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: 100vh;
+    position: fixed;
+    top: 70px; /* abaixo do header */
+    left: 0;
+    color: #61dafb;
+    font-weight: 600;
+}
+
+/* Título lateral */
+aside h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #61dafb;
+    padding-bottom: 0.5rem;
+}
+
+/* Conteúdo principal */
+main {
+    margin-left: 240px; /* afastar do aside */
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+/* Containers dos vídeos */
+.video-container {
+    margin-bottom: 2.5rem;
+    background-color: #282c34;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(97, 218, 251, 0.3);
+}
+
+.video-container h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #61dafb;
+}
+
+/* Tornar vídeos responsivos */
+iframe {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
